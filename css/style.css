@@ -81,17 +81,13 @@ body{
   line-height: 56px;
   letter-spacing: 0.6px;
   color: #01353E; 
-  position:relative;
-} 
+  position:relative; 
+  text-transform: uppercase; 
+}  
  
 .title::after{  
-  content: url(../images/title-decor.png);
-  position: absolute; 
-  bottom: 9%;
-  right: 4%;
+  content:url('../images/title-decor.png');  
 } 
-
-
  
 .header{ 
   background-image: url('../images/header-bg.jpg'); 
@@ -170,15 +166,22 @@ body{
 }  
  
 .header__icon{  
- padding-bottom: 78px;
+ padding-bottom: 78px; 
 } 
- 
+  
+.about{ 
+  padding:153px 0 43px;
+} 
+
 .about__title{ 
   text-align: center; 
-  padding:153px 0 43px; 
   border-bottom: 12px solid #D9D9D9;
 }
- 
+  
+/* .about__title::after{  
+  content:url('../images/title-decor.png');
+}  */
+
 .about__content{ 
    display: flex;
    flex-direction: row; 
@@ -198,4 +201,85 @@ body{
 .about__content-text{ 
   border:1px solid transparent; 
   padding-bottom: 30px;
+} 
+ 
+.benefits{ 
+  padding: 200px 0; 
+  background-color: #F8F8F8;
+} 
+ 
+.benefits__title{ 
+  text-align: center; 
+}  
+ 
+.benefits__items{   
+  display: flex; 
+  justify-content: space-around;  
+  padding: 100px 0 20px;
+  border-bottom: 14px solid #D9D9D9; 
+  margin-bottom: 75px;
+}
+.benefits__item{ 
+  max-width: 319px;
+}
+ 
+.benefits__item-top{  
+  max-width: 225px; 
+  padding-bottom: 19px; 
+  margin: 0 auto;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center; 
+} 
+ 
+.benefits__item-title{ 
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;   
+  padding-left: 10px;
+}  
+ 
+.benefits__statistics{ 
+  display: flex; 
+  justify-content: space-around;
+}
+  
+.benefits__statistics-numbers{  
+  width:370px
+} 
+
+.benefits__statistics-number{ 
+  background-image: url('../images/line.svg'); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  position: relative; 
+  margin-bottom: 19px;
+} 
+ 
+.benefits__statistics-number span{ 
+   background: #F8F8F8;   
+   padding: 5px;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 18px;
+   letter-spacing: 0.6px;
+   color: #242121;
+   height: 100%;  
+   display: block;
+   margin-left: auto;
+}  
+
+.benefits__statistics-title{ 
+  position:absolute; 
+  top:30px; 
+  left:0px;
+}   
+
+.benefits__statistics-info{ 
+  max-width: 600px;
+} 
+ 
+.benefits__statistics-text{ 
+  margin-bottom: 30px;
 }
