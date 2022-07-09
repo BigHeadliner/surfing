@@ -535,7 +535,7 @@ body{
  
 .team__items{ 
   display:flex;  
-  justify-content: space-between; 
+  justify-content: space-evenly; 
   align-items: center;
 } 
  
@@ -555,4 +555,89 @@ body{
   font-size: 14px;
   letter-spacing: 0.6px;
   color: #242121;
+} 
+ 
+.pricing{ 
+   padding:200px 0; 
+   text-align: center; 
+   background-color: #F8F8F8;
+}   
+ 
+.pricing__title{ 
+  margin-bottom: 200px;
+} 
+  
+.pricing__items{ 
+  display: flex; 
+  justify-content: space-evenly;
+} 
+
+.pricing__items .pricing__item{  
+   background:#FFF; 
+   max-width:360px;   
+   max-height: 577px;
+   display: block; 
+   padding: 45px 43px;  
+   border:1px solid transparent;   
+} 
+ 
+.pricing__item .pricing__item-name{ 
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #01353E;  
+  margin-bottom: 58px;   
+} 
+ 
+.pricing__item li{ 
+  font-weight: 400; 
+  margin-bottom: 20px; 
+  text-align: left;
+} 
+.pricing__item li:first-child,  
+.pricing__item li:last-child { 
+  text-align: center;  
+}  
+
+.pricing__item .pricing__item-standard{ 
+ margin-bottom: 137px;
+} 
+   
+.pricing__item .pricing__item-allink{ 
+  margin-bottom: 61px;
+ } 
+  
+ .pricing__item .pricing__item-prof{ 
+  margin-bottom: 61px;
+ }
+.pricing__item-num{  
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px; 
+  color: #01353E; 
+  position:relative; 
+  margin-top: auto;
+} 
+ 
+.pricing__item-num span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #01353E; 
+  position: absolute; 
+  top: 18%; 
+  right:31%;
+} 
+ 
+.map{ 
+  padding: 200px 0; 
+  background: #FFF;
+} 
+ 
+.map__main {
+  background-image: url("../images/map-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 640px;
 }
