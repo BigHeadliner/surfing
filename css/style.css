@@ -742,4 +742,14 @@ body{
 .connection__social-item:hover{  
   color: #00B2A0;
  }  
- 
+  
+ .footer{ 
+  padding: 65px 0; 
+  background: #00B2A0; 
+  text-align: center;
+ } 
+  
+ .footer__logo{  
+  display: inline-block;
+  margin:0 auto;
+ }
