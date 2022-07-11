@@ -768,7 +768,31 @@ body {
 }
 
 
-/* ---- adaptive ---- */
+/* ---- adaptive ---- */ 
+ 
+@media(max-width: 1140px) {     
+
+  /* ---- benefits ---- */ 
+
+  .benefits { 
+    padding: 200px 0 100px;
+  }
+
+   /* ---- peaks ---- */
+  .peaks{ 
+    background-position: center;
+    background-size: cover; 
+    color:#FFF;
+  } 
+   
+  .peaks__title{ 
+    color:#FFF; 
+  } 
+   
+  .peaks__inner{ 
+    max-width:85%;
+  }
+}
  
 @media(max-width: 1067px) {
   /* ---- about ---- */
@@ -817,6 +841,16 @@ body {
 .benefits__statistics-info{ 
   max-width: 90%;
 }
+ 
+ /* ---- peaks ---- */ 
+  
+ .peaks__title.title{ 
+   margin: 65px 0 45px;
+ } 
+  
+ .peaks__inner{ 
+  padding: 0 15px 20px 0;
+ }
 
 }
 
@@ -917,7 +951,13 @@ body {
     max-width: 100%; 
     padding-top: 27px; 
     font-size: 17px;
-  }
+  } 
+   
+   /* ---- benefits ---- */      
+
+   .benefits{  
+    padding: 50px 0;
+   }
 
 }
  
@@ -932,7 +972,13 @@ body {
    
   .header__subtitle{ 
     font-size: 20px;
-  }
+  } 
+   
+   /* ---- peaks ---- */    
+
+   .peaks__title.title::after{ 
+     display: none;
+   }
 } 
   
 @media(max-width: 699px) {   
@@ -951,6 +997,21 @@ body {
   .benefits__item-text{ 
     line-height: 23px;
   } 
+  
+    /* ---- peaks ---- */     
+     
+    .peaks__inner {
+      max-width: 100%;
+  } 
+
+  .peaks__title.title{ 
+    margin: 23px 0 24px;
+  }  
+   
+  .peaks__title { 
+    font-size: 40px;  
+    line-height: 40px;
+  }
 
  } 
 
@@ -1017,5 +1078,15 @@ body {
      
     .benefits__statistics-info{  
       max-width: 100%;
+    } 
+      
+    /* ---- peaks ---- */      
+
+    .peaks__inner{ 
+      padding: 0;
+    } 
+     
+    .peaks__title.title{  
+      font-size: 32px;
     }
 }
