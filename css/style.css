@@ -243,7 +243,7 @@ body {
 .benefits__item-title {
   font-weight: 400;
   font-size: 24px;
-  line-height: 18px;
+  line-height: 25px;
   padding-left: 10px;
 }
 
@@ -281,7 +281,7 @@ body {
 .benefits__statistics-title {
   position: absolute;
   top: 30px;
-  left: 0px;
+  left: 0px; 
 }
 
 .benefits__statistics-info {
@@ -770,16 +770,54 @@ body {
 
 /* ---- adaptive ---- */
  
-@media(max-width: 1067px) { 
-    /* ---- about ---- */ 
-  
-    .about__title.title::after{ 
-      display: none;
-    } 
+@media(max-width: 1067px) {
+  /* ---- about ---- */
 
-   .about__content-item{ 
+  .about__title.title::after {
+    display: none;
+  }
+
+  .about__content-item {
     margin-right: 40px;
-   } 
+  }
+
+  /* ---- benefits ---- */
+  .benefits {
+    padding: 87px 0;
+  } 
+   
+  .benefits__items{ 
+    padding: 70px 0 20px; 
+    flex-wrap: wrap; 
+  } 
+   
+ .benefits__item{ 
+  margin: 10px;
+ }
+ 
+ .benefits__statistics{ 
+   display: block; 
+   padding: 0 10px;
+ } 
+
+.benefits__statistics-numbers{   
+  width:90%;
+  margin-bottom: 67px;
+ }   
+  
+ .benefits__statistics-number{ 
+  margin-bottom: 50px;
+ }
+ .benefits__statistics-title {
+  position: absolute;
+  top: -24px;
+  left: 0px;
+} 
+ 
+.benefits__statistics-info{ 
+  max-width: 90%;
+}
+
 }
 
 @media(max-width: 997px) {
@@ -798,7 +836,17 @@ body {
  
    .about__title{ 
     border-bottom: 7px solid #D9D9D9; 
-   }
+   } 
+     
+     /* ---- benefits ---- */    
+
+   .benefits__items{ 
+    border-bottom: 7px solid #D9D9D9; 
+   } 
+    
+   .benefits__statistics-info {
+    max-width: 100%;
+}
 }
 
 @media(max-width: 885px) {
@@ -886,7 +934,26 @@ body {
     font-size: 20px;
   }
 } 
+  
+@media(max-width: 699px) {   
+   
+    /* ---- benefits ---- */    
+
+   .benefits__title.title::after{ 
+    display: none;
+  }  
+   
+  .benefits__item{ 
+    max-width:70%; 
+    margin: 15px;
+  } 
  
+  .benefits__item-text{ 
+    line-height: 23px;
+  } 
+
+ } 
+
 @media(max-width: 530px) {  
    
    /* ---- header ---- */   
@@ -927,5 +994,28 @@ body {
      
     .about__content-text { 
       padding-bottom: 17px;
+    } 
+      
+    /* ---- benefits ---- */      
+     
+    .benefits__title.title{ 
+      font-size: 32px; 
+      line-height: 45px;
+    }
+
+    .benefits{ 
+      padding: 30px 0;
+    } 
+     
+    .benefits__items{ 
+      padding: 50px 0 20px; 
+    } 
+     
+    .benefits__item{ 
+     margin: 23px 0; 
+    } 
+     
+    .benefits__statistics-info{  
+      max-width: 100%;
     }
 }
