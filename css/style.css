@@ -836,7 +836,13 @@ body {
   .slider-blog__item-descr {
     text-align: center;
     max-width: 100%;
-  }
+  }  
+   
+   /* ---- pricing ---- */
+   
+  .pricing__items .pricing__item {
+    margin: 0 10px;
+   }
 }
 
 @media(max-width: 1140px) {
@@ -934,7 +940,23 @@ body {
  
   .team__item{ 
     margin:0 5px;
-  }
+  } 
+   
+   /* ----  pricing ---- */ 
+    
+   .pricing { 
+    padding: 100px 0;
+   } 
+    
+   .pricing__title { 
+    margin-bottom: 100px;
+   }   
+ 
+    /* ---- pricing ---- */ 
+    .pricing__items .pricing__item {
+       padding: 25px 15px;
+     }
+  
 
 }
 
@@ -1114,7 +1136,20 @@ body {
 
   .benefits {
     padding: 50px 0;
-  }
+  } 
+    
+   /* ---- pricing ---- */
+   .pricing__items .pricing__item {
+    margin: 15px;
+  } 
+   
+  .pricing__items {
+    flex-wrap: wrap;
+}
+ 
+.pricing__items .pricing__item {
+  border: 3px solid #00B2A0;
+}
 
 }
 
@@ -1200,7 +1235,13 @@ body {
 
   .team__title.title::after {
     display: none;
-  }
+  } 
+    
+  /* ----pricing ---- */ 
+
+  .pricing__title.title::after {
+    display: none;
+  } 
 
 }
 
@@ -1344,11 +1385,12 @@ body {
     font-size: 32px;
   }
 
-  /* ----  portfolio blog team  ---- */
+  /* ---- portfolio blog team pricing ---- */
 
   .portfolio__title.title,
   .slider-blog__title.title,
-  .team__title.title {
+  .team__title.title,  
+  .pricing__title.title {
     font-size: 32px;
   }
 
@@ -1453,6 +1495,12 @@ body {
     justify-content: center;
     position: absolute;
     bottom: 43px;
-  }
+  } 
+    
+   /* ----  pricing  ---- */ 
+   
+  .pricing__items .pricing__item {
+    padding: 20px 14px;
+}
 
 }
