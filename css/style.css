@@ -956,7 +956,12 @@ body {
     .pricing__items .pricing__item {
        padding: 25px 15px;
      }
-  
+   
+      /* ---- map  ---- */   
+
+     .map {
+      padding: 100px 0;
+  }
 
 }
 
@@ -1000,7 +1005,17 @@ body {
     height: 10px;
   }
 
+  /* ---- map ---- */
+  .map {
+    padding: 0;
+  }
+
+  .map__main {
+    height: 540px;
+  }
+
 }
+
 
 
 @media(max-width: 890px) {
@@ -1495,12 +1510,18 @@ body {
     justify-content: center;
     position: absolute;
     bottom: 43px;
-  } 
-    
-   /* ----  pricing  ---- */ 
-   
+  }
+
+  /* ----  pricing  ---- */
+
   .pricing__items .pricing__item {
     padding: 20px 14px;
-}
+  }
+
+  /* ----  map  ---- */
+
+  .map__main {
+    height: 470px;
+  }
 
 }
