@@ -768,8 +768,42 @@ body {
 }
 
 
-/* ---- adaptive ---- */ 
+/* ---- adaptive ---- */  
  
+@media(max-width: 1207px) {    
+   
+    /* ---- portfolio ---- */    
+    .portfolio__content {
+     display:flex; 
+     justify-content: space-evenly; 
+     flex-wrap:wrap; 
+     border: 1px solid transparent;
+     max-width: 1000px; 
+     margin:0 auto 50px;
+  }    
+
+  .portfolio__item1, 
+  .portfolio__item2, 
+  .portfolio__item3,  
+  .portfolio__item4,  
+  .portfolio__item5, 
+  .portfolio__item6{   
+   
+    height:280px; 
+    max-width: 270px; 
+    margin:15px 0;
+    border:1px solid transparent;
+  } 
+  .portfolio__item1 img, 
+  .portfolio__item2 img, 
+  .portfolio__item3 img,  
+  .portfolio__item4 img,  
+  .portfolio__item5 img, 
+  .portfolio__item6 img{ 
+    height:280px; 
+    max-width: 270px;
+  } 
+}
 @media(max-width: 1140px) {     
 
   /* ---- benefits ---- */ 
@@ -880,7 +914,63 @@ body {
     
    .benefits__statistics-info {
     max-width: 100%;
-}
+} 
+ 
+
+} 
+   
+
+@media(max-width: 890px) {
+
+  /* ---- portfolio ---- */
+ 
+  .portfolio__title {
+    margin-bottom: 100px;
+  }
+ 
+  portfolio__filter-btn{ 
+    margin-bottom: 70px;
+  } 
+
+  .portfolio__content {
+    max-width: 582px;
+  }
+
+  .portfolio__item1,
+  .portfolio__item2,
+  .portfolio__item3,
+  .portfolio__item4,
+  .portfolio__item5,
+  .portfolio__item6 {
+    height: 280px;
+    max-width: 50%;
+    margin: 15px 0;
+    border: 1px solid transparent;
+  }
+
+  .portfolio__show-more { 
+    text-align: center;
+    margin-bottom: 107px;
+  }
+
+  .portfolio__blockquote-wrapper {
+    margin-bottom: 115px;
+  }
+
+  .blockquote span {
+    position: absolute;
+    top: 49px;
+    right: 7px;
+  }
+
+  .portfolio__video {
+    margin-bottom: 115px;
+  } 
+   
+  .portfolio__numbers{ 
+    margin-bottom: 100px;
+  }
+
 }
 
 @media(max-width: 885px) {
@@ -1012,8 +1102,67 @@ body {
     font-size: 40px;  
     line-height: 40px;
   }
+  
+    /* ---- portfolio ---- */   
+   
+  .portfolio__title.title::after{ 
+    display: none;
+  }   
 
- } 
+ }   
+  
+ @media(max-width: 585px) {     
+ 
+   /* ----portfolio ---- */     
+
+  .portfolio__content{ 
+    justify-content: center;  
+    align-items: center;
+  } 
+
+  .portfolio__item1 img, 
+  .portfolio__item2 img, 
+  .portfolio__item3 img,  
+  .portfolio__item4 img,  
+  .portfolio__item5 img, 
+  .portfolio__item6 img{ 
+    height:280px; 
+    width: 270px;
+  }  
+   
+  .portfolio__item1, 
+  .portfolio__item2, 
+  .portfolio__item3,  
+  .portfolio__item4,  
+  .portfolio__item5, 
+  .portfolio__item6{ 
+    width: 100%;
+  } 
+ }
+   
+
+ @media(max-width: 570px) {
+
+   /* ----portfolio ---- */
+
+   .blockquote {
+     font-size: 30px;
+   } 
+    
+  .portfolio__item1, 
+  .portfolio__item2, 
+  .portfolio__item3,  
+  .portfolio__item4,  
+  .portfolio__item5, 
+  .portfolio__item6{ 
+   margin: 10px 0;
+  } 
+
+   .portfolio__numbers-item {
+     font-size: 51px;
+   }
+ }
+
 
 @media(max-width: 530px) {  
    
@@ -1088,5 +1237,73 @@ body {
      
     .peaks__title.title{  
       font-size: 32px;
-    }
+    } 
+      
+     /* ----  portfolio  ---- */    
+
+    .portfolio__title.title{  
+      font-size: 32px;
+    } 
+
+} 
+ 
+@media(max-width: 470px) {    
+   
+    /* ----  portfolio ---- */     
+     
+    .portfolio__btn { 
+      font-size: 18px;
+    } 
+     
+  .portfolio__item1, 
+  .portfolio__item2, 
+  .portfolio__item3,  
+  .portfolio__item4,  
+  .portfolio__item5, 
+  .portfolio__item6{ 
+    height: auto;
+  }  
+  
+  .portfolio__item1 img, 
+  .portfolio__item2 img, 
+  .portfolio__item3 img,  
+  .portfolio__item4 img,  
+  .portfolio__item5 img, 
+  .portfolio__item6 img{ 
+    height: auto; 
+    width: 100%;
+  }    
+   
+  .portfolio__show-more{ 
+    font-size: 17px; 
+    margin-bottom: 70px;
+  } 
+   
+  .portfolio__blockquote-wrapper {
+    margin-bottom: 70px;
+}
+
+  .blockquote{ 
+    font-size: 19px;
+  }  
+
+  .blockquote span {
+    position: absolute;
+    top: 37px;
+    right: 7px;
+} 
+ 
+.portfolio__video { 
+  height: 470px;
+} 
+ 
+.portfolio__numbers-item {
+  font-size: 39px;
+} 
+ 
+.portfolio__numbers-item span {
+  font-size: 10px; 
+  display: block;
+}
+
 }
