@@ -866,7 +866,14 @@ body {
 
   .peaks__inner {
     max-width: 85%;
-  }
+  }  
+ 
+   /* ---- footer ---- */ 
+
+  .footer{ 
+    padding: 50px 0;
+   } 
+
 }
 
 @media(max-width: 1067px) {
@@ -1019,6 +1026,12 @@ body {
   .map__main {
     height: 540px;
   }
+   
+  /* ---- footer ---- */   
+
+  .footer{ 
+    padding: 30px 0;
+  } 
 
 }
 
@@ -1312,6 +1325,12 @@ body {
   .connection__title.title::after {
     display: none;
   } 
+ 
+   /* ---- footer ---- */   
+
+   .footer{ 
+    padding: 23px 0;
+  }  
 
 }
 
@@ -1615,6 +1634,12 @@ body {
      
     .contacts .contacts__address { 
       line-height: 32px;
-    }
+    } 
+     
+     /* ---- footer ---- */   
+
+  .footer{ 
+    padding: 17px 0;
+  } 
 
 }
