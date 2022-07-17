@@ -961,7 +961,13 @@ body {
 
      .map {
       padding: 100px 0;
-  }
+  } 
+   
+    /* ----  connection  ---- */    
+     
+    .connection__title.title{ 
+       margin-bottom: 130px;
+    }
 
 }
 
@@ -1073,8 +1079,37 @@ body {
 
   .slider-blog__item-title {
     font-size: 33px;
+  } 
+   
+   /* ---- connection ---- */ 
+    
+  .connection__inner{ 
+     flex-wrap: wrap;
+  }   
+   
+  .connection__form { 
+    margin-bottom: 50px;
   }
+   
+  .connection__form input, 
+  .connection__form textarea {  
+    width: 100%; 
+    padding: 16px 0 16px 18px;
+  } 
+   
+  .connection__inner .contacts { 
+    text-align: center;
+  }  
+   
+  .contacts .contacts__title, 
+  .contacts .contacts__messenger, 
+  .contacts .contacts__address{ 
+     max-width: 100%; 
+     line-height: 40px;
+  } 
+   
 
+  
 }
 
 @media(max-width: 885px) {
@@ -1191,7 +1226,21 @@ body {
 
   .slider-blog__title.title {
     margin-bottom: 50px;
+  } 
+   
+   /* ---- connection ---- */  
+
+  .connection__inner, 
+  .connection__social{ 
+    margin-bottom: 100px;
+  } 
+   
+  .connection__social{ 
+    display: flex; 
+    justify-content: space-evenly;
   }
+ 
+  
 }
 
 @media(max-width: 699px) {
@@ -1255,6 +1304,12 @@ body {
   /* ----pricing ---- */ 
 
   .pricing__title.title::after {
+    display: none;
+  }  
+   
+  /* ---- connection ---- */ 
+
+  .connection__title.title::after {
     display: none;
   } 
 
@@ -1405,9 +1460,10 @@ body {
   .portfolio__title.title,
   .slider-blog__title.title,
   .team__title.title,  
-  .pricing__title.title {
+  .pricing__title.title, 
+  .connection__title.title { 
     font-size: 32px;
-  }
+} 
 
   /* ---- team  ---- */
 
@@ -1425,6 +1481,16 @@ body {
 
   .team__position {
     font-size: 14px;
+  }  
+   
+   /* ---- connection ---- */
+   
+  .connection__inner .contacts{ 
+    padding: 55px 19px 55px;
+  }  
+
+  .connection__social{ 
+     flex-wrap:wrap;
   }
 
 }
@@ -1522,6 +1588,33 @@ body {
 
   .map__main {
     height: 470px;
-  }
+  } 
+   
+    /* ----  connection  ---- */ 
+     
+    .connection__title.title { 
+      margin-bottom: 100px; 
+      line-height: 47px;
+    } 
+      
+    .connection__form textarea { 
+      line-height: 25px;
+    } 
+
+    .connection__form button { 
+      padding: 25px 77px 25px;
+    } 
+     
+    .connection__social-item { 
+      margin: 18px;
+    }  
+     
+    .connection__inner .contacts{ 
+      padding: 27px 10px 10px;
+    } 
+     
+    .contacts .contacts__address { 
+      line-height: 32px;
+    }
 
 }
